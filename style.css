@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3 {
+  margin: 20px 0;
+}
+
+video, canvas {
+  border: 1px solid #333;
+  margin: 10px;
+  max-width: 90vw;
+  height: auto;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 600px) {
+  video, canvas {
+    width: 100%;
+  }
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
