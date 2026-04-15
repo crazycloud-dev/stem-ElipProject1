@@ -1,31 +1,26 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="vi">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Phát hiện hình elip bằng AI</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Load OpenCV.js -->
-    <script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phát hiện Elip</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h2>Quét camera và phát hiện hình elip</h2>
-    <video id="video" width="400" height="300" autoplay></video>
-    <canvas id="canvas" width="400" height="300"></canvas>
+  <div class="container">
+    <h1>Nhận diện hình Elip</h1>
+    
+    <input type="file" id="upload" accept="image/*">
+    <canvas id="canvas"></canvas>
 
-    <h3>Kết quả phát hiện</h3>
-    <table id="resultTable">
-        <thead>
-            <tr>
-                <th>Hình elip</th>
-                <th>Phương trình</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <div id="result">
+      <h2>Kết quả</h2>
+      <p id="equation">Phương trình: ...</p>
+      <div id="grid"></div>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
